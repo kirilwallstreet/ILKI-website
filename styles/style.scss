@@ -162,10 +162,12 @@ body {
 	min-height: 100%;
 }
 
-.drawer-button{
+.list-container{
 	display: none;
 
 }
+
+
 .header__menu {
 }
 .menu {
@@ -201,9 +203,12 @@ body {
 		padding-top: 15px;
 	}
 	.header__container {
-		flex-direction: column;
+		flex-direction:start;
 		align-items: center;
-		row-gap: 20px;
+		row-gap: px;
+	}
+	.list-container{
+		display: block;
 	}
 	.header__logo {
 		max-width: 150px;
@@ -910,6 +915,7 @@ body {
 
 .list-container {
 	position: relative;
+	
   }
   .list-container.active .more-button-list {
 	opacity: 1;
