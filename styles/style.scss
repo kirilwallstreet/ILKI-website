@@ -161,6 +161,11 @@ body {
 	max-width: 100%;
 	min-height: 100%;
 }
+
+.drawer-button{
+	display: none;
+
+}
 .header__menu {
 }
 .menu {
@@ -206,10 +211,17 @@ body {
 	}
 	.menu__list {
 		justify-content: center;
+		display: none;
 	}
 	.menu__link {
 		font-size: 20px;
 	}
+	
+	.drawer-button{
+		display: block;
+	}
+	
+
 }
 /* Hero */
 .hero {
