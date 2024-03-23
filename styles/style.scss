@@ -242,11 +242,13 @@ body {
 	.header__logo {
 		max-width: 150px;
 		flex: 0 0 auto;
-	
-		
-		margin-left: auto;
-		align-items: center;
+		margin: auto;
+	    border-radius: 50% ;
 	}
+	.header__logo img{
+		padding-right: 50px;
+	}
+
 	.menu__list {
 		justify-content: center;
 		display: none;
@@ -327,7 +329,7 @@ body {
   }
   
   .more-button {
-	background-color: #5c67ff;
+	background-color: var(--primary-color);
 
 	border-radius: 50%;
 	width: 50px;
@@ -345,7 +347,7 @@ body {
   }
   .more-button:hover, .more-button:focus {
 	
-	background-color: #4854ff;
+	background-color: var(--primary-color);
   }
   .more-button:focus {
 	outline: 0;
