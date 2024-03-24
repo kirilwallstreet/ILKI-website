@@ -161,6 +161,9 @@ body {
 	position: sticky;
 	top: 0;
 	z-index: 999; /* To ensure it appears above other elements when scrolling */
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.364) 0%, rgba(255, 255, 255, 0) 100%);
+
+	
 		/* ...existing styles... */
 	
 }
@@ -173,6 +176,7 @@ body {
 .header__logo {
 	flex: 0 0 80px;
 	min-height: 10;
+	max-width: 100px;
 }
 .header__logo img {
 	scale: 1.5;
@@ -200,6 +204,7 @@ body {
   }
 
 .header__menu {
+	font-style: none;
 }
 .menu {
 }
@@ -484,7 +489,7 @@ body {
 /* Hero */
 .hero {
 	padding-top: 62px;
-	padding-bottom: 40px;
+	padding-bottom: 4px;
 	position: relative;
 }
 .hero__container {
@@ -629,6 +634,32 @@ body {
 		display: none;
 	}
 }
+
+.brand-list {
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	overflow: hidden;
+	
+  }
+  
+  .brand_wrapper {
+	display: grid;
+	grid-auto-flow: column;
+	gap: 30px;
+	grid-auto-columns: 240px;
+	animation: scroll 14s linear infinite;
+	padding-bottom: 5px;
+  }
+  
+  @keyframes scroll {
+	0% {
+	  transform: translateX(0);
+	}
+	100% {
+	  transform: translateX(calc(-5 * 230px));
+	}
+  }
 /* Features */
 .features {
 }
