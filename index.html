@@ -22,6 +22,7 @@
 </head>
 <body>
     <div class="wrapper">
+        
            <header id="header" class="header"> 
             <div class="header__container">
                 
@@ -44,7 +45,7 @@
                         <a href="#reviews" class="menu__link">Review</a>
                     </li>
                     <li class="more-button-list-item">
-                        <a href="#features" class="menu__link">Оставить заявку</a>
+                        <a href="#popup" class="menu__link">Оставить заявку</a>
                     </li>
 
                     </ul>
@@ -52,7 +53,7 @@
                   <a href="#hero" class="header__logo">
                     <img src="source/header/logo.png" alt="Logo">
                 </a>
-      <nav class="header__menu menu">
+                <nav class="header__menu menu">
                     <ul class="menu__list">
                         <li class="menu__item">
                             <a href="#features" class="menu__link">Feature</a>
@@ -64,16 +65,14 @@
                             <a href="#reviews" class="menu__link">Review</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#features" class="menu__link">Оставить заявку</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#features" class="menu__link">Звязятися з нами заявку</a>
+                            <a href="#popup" class="menu__link">Оставить заявку</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </header> 
         <main class="page">
+            
             <section id="hero" class="page__hero hero">
                 <div class="hero__container">
                     <div class="hero__content content-hero">
@@ -190,9 +189,7 @@
                 <div class="blog-slider__pagination"></div>
               </div>
     
-                <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-              <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script><script  src="script/script.js"></script>
-              
+                         
             <section id="services" class="page__services services">
                 <div class="services__container">
                     <div class="services__header-block header-block header-block--margin">
@@ -349,5 +346,43 @@
             <div class="footer__copy">© 2024 Lidia. All rights reserved.</div>
         </footer>
     </div>
+ 
+    <div id="popup" class="popup">
+        <div class="popup__body">
+            <a href="#header" class="popup__area"></a>
+            <div class="popup__content">
+                <a href="#header" class="popup__close">X</a>
+                <div class="popup__titel">sius</div>
+                <div class="popup__subtitel">Sign In / Up</div>
+            <div class="popup__item">
+                <label for="formName" class="popup__label">Імя*</label>
+                <input type="text" name="name" id="formName" class="popup_input">
+            </div>
+            <div class="popup_item">
+                <label for="formEmail" class="popup__label">E-mail*</label>
+                <input type="text" name="email" id="formEmail" class="popup_input">
+          
+            </div>
+            <div class="popup_item">
+                <label for="formEmail" class="popup__label">телеграм нык*</label>
+                <input type="text" name="email" id="formEmail" class="popup_input">
+          
+            </div>
+            <div class="popup_item">
+                <label for="formMessage" class="popup__label">Доп інфа</label>
+                <textarea name="message" id="formMessage" class="popup_input"></textarea>
+            </div>
+            <div class="popup_item">
+                <div class="popup__label">кто ты</div>
+                <select name="type" id="" class="popup__select">
+                    <option value="1">у меня есит физ бизнес хчоу масштаьирова</option>
+                    <option value="">нема физ бизнеса</option>
+                </select>
+            </div>
+          <button type="sub" class="popup__button">Отправить</button>  
+        </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script><script  src="script/script.js"></script>
 </body>
 </html>
