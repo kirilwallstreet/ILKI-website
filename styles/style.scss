@@ -175,7 +175,8 @@ body {
 	min-height: 10;
 }
 .header__logo img {
-	
+	scale: 1.5;
+	max-width: 100px;
 }
 
 .list-container{
@@ -249,6 +250,8 @@ body {
 	.header__logo img{
 		padding-right: 25px;
 		scale: 1.5;
+		max-width: 140px;
+	
 	}
 
 	.menu__list {
