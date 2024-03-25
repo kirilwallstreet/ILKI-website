@@ -1227,9 +1227,10 @@ body {
 	min-height: 100%;
 	display: flex;
 	align-items: center;
-	justify-self: center;
+	justify-content: center;
 	padding: 30px 10px;
 	transition: all 0.3s ease 0s;
+	
 
 
 }
@@ -1239,8 +1240,6 @@ body {
 	max-width: 800px;
 	padding: 30px;
 	position: fixed;  /* Ensures centering within viewport */
-	
-	left: 50%;
 	transform: translate(-50%, -50%);  /* Center relative to viewport */
 	transition: all 0.3s ease 0s;
 	opacity: 0;
@@ -1248,18 +1247,14 @@ body {
 }
 
 	@media (max-width:500px) {
-		.popup__content {
-			left: 20%;
-		}
+		
 		
 	}
 .popup__close {
 	position: absolute;
-	right: 10px;
-	top: 10px;
-	font-size: 36px;
-	text-decoration: none;
-	color: #000;
+	right: 25px;
+	top: 20px;
+	max-width: 20px;
 
 }
 .popup__titel {
@@ -1269,7 +1264,7 @@ body {
 }
 
 .popup__subtitel{
-	font-size: 10px;
+	font-size: 15px;
 	color: #464646;
 	
 }
@@ -1329,6 +1324,6 @@ textarea.popup_input {
 }
 
 .popup__button:hover{
-	top: 20;
+	top: 5px;
 	box-shadow: 0 30px 60px 0 rgba(68, 117, 242, 0.5);
 }
