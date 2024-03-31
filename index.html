@@ -34,6 +34,7 @@
                         <div class="menu-icon-line half last"></div>
                       </div>
                     </button>
+                    
                     <ul class="more-button-list">
                       <li class="more-button-list-item">
                         <a href="#features" class="menu__link">Feature</a>
@@ -83,7 +84,7 @@
                                 Embark on a literary journey like never before with our revolutionary library application! Introducing a seamless experience that transcends traditional boundaries, where you can effortlessly search your favorite books.✨
                             </p>
                         </div>
-                        <a href="#" class="content-hero__button">Start now →</a>
+                        <a href="#popup" class="content-hero__button">Start now →</a>
                     </div>
                     <div class="hero__images images-hero">
                         <a href="#" class="images-hero__item images-hero__item--0">
@@ -318,7 +319,10 @@
                 <div class="page__contact_us contact_us">
                     <div class="contact_us__body">
                         <div class="contact_us__title"><h1>Хочешь сєкономить время?</h1></div>
-                        <button class="contact_us__button">Залишити заявку на консультацию</button>
+                        <form action="#popup">
+                            <button class="contact_us__button" ><a href="#popup">Залишити заявку на консультацию</a></button>
+                        </form>
+                        
                         
                     </div>
                 </div>
@@ -364,21 +368,21 @@
                 <div class="popup__subtitel">Мі получим вашу заявку и ответим на нее в скорейшом времени</div>
             <div class="popup__item">
                 <label for="formName" class="popup__label">Імя*</label>
-                <input type="text" name="name" id="formName" class="popup_input">
+                <input type="text" name="name" id="formName" class="popup__input _req">
             </div>
             <div class="popup_item">
                 <label for="formEmail" class="popup__label">E-mail*</label>
-                <input type="text" name="email" id="formEmail" class="popup_input">
+                <input type="text" name="email" id="formEmail" class="popup__input _req _email">
           
             </div>
             <div class="popup_item">
                 <label for="formEmail" class="popup__label">телеграм нык*</label>
-                <input type="text" name="email" id="formEmail" class="popup_input">
+                <input type="text" name="email" id="formEmail" class="popup__input _req">
           
             </div>
             <div class="popup_item">
                 <label for="formMessage" class="popup__label">Доп інфа</label>
-                <textarea name="message" id="formMessage" class="popup_input"></textarea>
+                <textarea name="message" id="formMessage" class="popup__input"></textarea>
             </div>
             <div class="popup_item">
                 <div class="popup__label">кто ты</div>
@@ -387,7 +391,7 @@
                     <option value="">нема физ бизнеса</option>
                 </select>
             </div>
-          <button type="sub" class="popup__button">Отправить</button>  
+          <button type="submit" class="popup__button">Отправить</button>  
         </div>
     </div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
