@@ -35,9 +35,7 @@ function validateForm() {
     
     nameError.textContent = "Введите имя";
     return false;
-  } else if (!/^[a-zA-Zа-яёА-ЯЁ]+$/.test(name)) {
-    nameError.textContent = "Имя может содержать только буквы";
-    return false;
+  }
   }
 
   // Валидация email
