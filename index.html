@@ -27,6 +27,9 @@ content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=
       });
    })();
 </script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@20.3.0/build/css/intlTelInput.css">
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@20.3.0/build/js/intlTelInput.min.js"></script>
+
 </head>
 <body>
     <div class="wrapper">
@@ -366,42 +369,46 @@ content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=
             <div class="footer__copy">© 2024 Lidia. All rights reserved.</div>
         </footer>
     </div>
- 
-    <div id="popup" class="popup">
+    <div id="popup" class="popup" >
         <div class="popup__body">
-            <a href="#header" class="popup__area"></a>
-            <div class="popup__content">
-                <a href="#header" class="popup__close"><img src="source/icon/x-10327.svg" alt=""></a>
-                <div class="popup__titel">sius</div>
-                <div class="popup__subtitel">Мі получим вашу заявку и ответим на нее в скорейшом времени</div>
-            <div class="popup__item">
-                <label for="formName" class="popup__label">Імя*</label>
-                <input type="text" name="name" id="formName" class="popup__input _req">
-            </div>
-            <div class="popup_item">
-                <label for="formEmail" class="popup__label">E-mail*</label>
-                <input type="text" name="email" id="formEmail" class="popup__input _req _email">
-          
-            </div>
-            <div class="popup_item">
-                <label for="formEmail" class="popup__label">телеграм нык*</label>
-                <input type="text" name="email" id="telegramname" class="popup__input _req">
-          
-            </div>
-            <div class="popup_item">
-                <label for="formMessage" class="popup__label">Доп інфа</label>
+          <a href="#header" class="popup__area"></a>
+          <div class="popup__content">
+            <a href="#header" class="popup__close"><img src="source/icon/x-10327.svg" alt=""></a>
+            <div class="popup__titel">sius</div>
+            <div class="popup__subtitel">Мі получим вашу заявку и ответим на нее в скорейшем времени</div>
+            <form id="popupForm" /*onsubmit="validatePopupForm()"*/>
+              <div class="popup__item">
+                <label for="formName" class="popup__label">Name*</label>
+                <input type="text" name="name" id="formName" class="popup__input ">
+              </div>
+              <div class="popup_item">
+                <label for="formEmail" class="popup__label">Email*</label>
+                <input type="text" name="email" id="formEmail" class="popup__input ">
+              </div>
+              <div class="popup_item">
+                <label for="formEmail" class="popup__label">Telegram name*</label>
+                <input type="text" name="email" id="telegramname" class="popup__input ">
+              </div>
+              <div class="popup_item">
+                <label for="formMessage" class="popup__label">Message</label>
                 <textarea name="message" id="formMessage" class="popup__input"></textarea>
-            </div>
-            <div class="popup_item">
-                <div class="popup__label">кто ты</div>
-                <select name="type" id="" class="popup__select">
-                    <option value="1">у меня есит физ бизнес хчоу масштаьирова</option>
-                    <option value="">нема физ бизнеса</option>
+              </div>
+              <div class="popup_item">
+                <div class="popup__label">Type</div>
+                <select name="type" id="popup__select" class="popup__select">
+                  <option value="1">I have a business</option>
+                  <option value="">I don't have a business</option>
                 </select>
-            </div>
-          <button type="submit" class="popup__button"  onclick="sendMail()">Отправить</button>  
+              </div>
+              <button type="submit" class="popup__button" >Submit</button>
+            </form>
+          </div>
         </div>
-    </div>
+      </div>
+      
+      <script>
+      
+      </script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script><script  src="script/script.js"></script>
 </body>

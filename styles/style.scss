@@ -496,6 +496,7 @@ body {
 }
 .hero__container {
 	display: flex;
+	top: -100px;
 }
 @media (max-width: 1200px) {
 	.hero__container {
@@ -514,6 +515,7 @@ body {
 	width: 200vw;
 	border-radius: 50px;
 	bottom: 0;
+	
 }
 .hero__container::before {
 	left: calc(50% + 30px);
@@ -534,6 +536,7 @@ body {
 	gap: 30px;
 	position: relative;
 	z-index: 2;
+	justify-items: start;
 
 }
 
@@ -545,7 +548,7 @@ body {
 }
 @media (min-width: 479.98px) {
 	.content-hero {
-		justify-items: start;
+		
 	}
 }
 .content__title {
@@ -588,11 +591,31 @@ body {
 	background-color: var(--primary-color);
 	padding: 18px 54px;
 	color: #fff;
-	font-weight: 700;
 	line-height: 156.25%; /* 25/16 */
 	position: relative;
 	top: 0;
 	transition: all 0.3s;
+	justify-content: center;
+
+
+
+	display: flex;
+	min-height: 60px;
+
+	text-decoration: none;
+	font-weight: 500;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	
+	margin-top: 25px;
+	top: 0;
+	position: relative;
+	margin: auto;
+	width: 300px;
+	box-shadow: 0 0 15px #9455f8;
+	
+	
 }
 .content-hero__button:hover {
 	top: 3px;
@@ -642,6 +665,8 @@ body {
 	justify-content: center;
 	align-items: start;
 	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
 	
   }
   
@@ -651,7 +676,16 @@ body {
 	gap: 30px;
 	grid-auto-columns: 240px;
 	animation: scroll 14s linear infinite;
-	padding-bottom: 5px;
+	padding-bottom: 15px;
+	margin-left: auto;
+	margin-right: auto;
+  }
+  
+
+  .brand_wrapper img {
+	text-align: center;
+	margin: auto;
+	
   }
   
   @keyframes scroll {
@@ -1317,6 +1351,8 @@ body {
 
 
 }
+
+
 .popup__content {
 	background-color: white;
 	color: #000;
@@ -1326,6 +1362,7 @@ body {
 	transform: translate(-50%, -50%);  /* Center relative to viewport */
 	transition: all 0.3s ease 0s;
 	opacity: 0;
+	border-radius: 15px;
 	
 }
 
@@ -1335,7 +1372,17 @@ body {
 	right: 25px;
 	top: 20px;
 	max-width: 20px;
+	opacity: 30%;
 
+}
+
+@media (max-width:550px){
+	.popup__close{
+		
+		right: 40px;
+	}
+
+	
 }
 .popup__titel {
 	color: #000;
