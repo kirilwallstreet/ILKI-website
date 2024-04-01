@@ -35,8 +35,7 @@ function validateForm() {
     
     nameError.textContent = "Введите имя";
     return false;
-  }
-  }
+  } 
 
   // Валидация email
   if (email === "") {
