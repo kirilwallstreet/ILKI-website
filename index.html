@@ -27,9 +27,6 @@ content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=
       });
    })();
 </script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@20.3.0/build/css/intlTelInput.css">
-<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@20.3.0/build/js/intlTelInput.min.js"></script>
-
 </head>
 <body>
     <div class="wrapper">
@@ -369,7 +366,8 @@ content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=
             <div class="footer__copy">© 2024 Lidia. All rights reserved.</div>
         </footer>
     </div>
-    <div id="popup" class="popup" >
+ 
+    <div id="popup" class="popup">
         <div class="popup__body">
             <a href="#header" class="popup__area"></a>
             <div class="popup__content">
@@ -378,38 +376,40 @@ content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=
                 <div class="popup__subtitel">Мі получим вашу заявку и ответим на нее в скорейшом времени</div>
             <div class="popup__item">
                 <label for="formName" class="popup__label">Імя*</label>
-                <input type="text" name="name" id="formName" class="popup__input ">
+                <input type="text" name="name" id="formName" class="popup__input " placeholder="Микола">
+                <span id="name-error" class="name-error"></span>
             </div>
             <div class="popup_item">
                 <label for="formEmail" class="popup__label">E-mail*</label>
-                <input type="text" name="email" id="formEmail" class="popup__input ">
+                <input type="text" name="email" id="formEmail" class="popup__input " placeholder="mykola@post.ua">
+                <span id="email-error" class="email-error"></span>
           
             </div>
             <div class="popup_item">
-                <label for="formEmail" class="popup__label">телеграм нык*</label>
-                <input type="text" name="email" id="telegramname" class="popup__input ">
+                <label for="formEmail" class="popup__label">телеграм нык</label>
+                <input type="text" name="email" id="telegramname" class="popup__input " placeholder="@mykola">
+                
           
             </div>
             <div class="popup_item">
                 <label for="formMessage" class="popup__label">Доп інфа</label>
-                <textarea name="message" id="formMessage" class="popup__input"></textarea>
-              </div>
-              <div class="popup_item">
-                <div class="popup__label">Type</div>
+                <textarea name="message" id="formMessage" class="popup__input" placeholder="Хочу як у амазон але щоб назівався Amykolazon "></textarea>
+            </div>
+            <div class="popup_item">
+                <div class="popup__label">кто ты</div>
                 <select name="type" id="popup__select" class="popup__select">
-                  <option value="1">I have a business</option>
-                  <option value="">I don't have a business</option>
+                    <option value="yes">у меня есит физ бизнес хчоу масштаьирова</option>
+                    <option value="no">нема физ бизнеса</option>
                 </select>
-              </div>
-              <button type="submit" class="popup__button" >Submit</button>
-            </form>
-          </div>
+            </div>
+            <button type="submit" id="popup__button" class="popup__button" 
+             onclick="sendMail()">
+             <span id="popup__button_span">Отправить</span> 
+             <img src="source/icon/system-regular-31-check.gif" alt="done-loading" class="done-loading" id="done-loading">
+             <img src="source/icon/Dual Ring@1x-1.4s-200px-200px (1).svg" class="loading-spinner" id="loading-spinner" alt="Loading...">
+            </button>  
         </div>
-      </div>
-      
-      <script>
-      
-      </script>
+    </div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script><script  src="script/script.js"></script>
 </body>

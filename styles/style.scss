@@ -1329,7 +1329,7 @@ body {
 
 .popup:target .popup__content {
 	transform:  translate(0, 0);
-	opacity: 1;
+	opacity: 1	;
 }
 
 .popup__area{
@@ -1387,7 +1387,7 @@ body {
 .popup__titel {
 	color: #000;
 	font-size: 40px;
-    margin: 0px 0px 10px 0px;
+    margin: px 0px 10px 0px;
 }
 
 .popup__subtitel{
@@ -1401,13 +1401,23 @@ body {
 .popup__text {
 }
 
+.popup__select{
+	border-radius: 5px;
+	padding: 7px;
+	width:  100%;
+	
+}
+
+
+
 .popup__item {
 	margin: 0px 0px 20px 0px;
 }
 .popup__label {
 	font-size: 18px;
 	display: block;
-	margin-bottom: 10px;
+	
+	margin: 10px 0px;
 }
 .popup__input {
 	height: 50px;
@@ -1461,3 +1471,20 @@ textarea.popup_input {
 	top: 5px;
 	box-shadow: 0 30px 60px 0 rgba(68, 117, 242, 0.5);
 }
+
+.loading-spinner {
+	
+	display: none;
+	max-width: 60px;
+	
+  }
+
+.done-loading{
+	display: none;
+	max-width: 50px;
+}
+
+  .popup__button span{
+	display: block;
+  }
+
