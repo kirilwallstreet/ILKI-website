@@ -85,6 +85,14 @@ function sendMail() {
       // Скрыть индикатор загрузки
       document.getElementById("loading-spinner").style.display = "none";
       document.getElementById("done-loading").style.display = "block";
+      setTimeout(() => {
+        document.getElementById("done-loading").style.display = "none";
+      }, 3000);
+
+      setTimeout(() => {
+        document.getElementById("popup__button_span").style.display = "block";
+      }, 3100);
+      
     })
     .catch(function(error) {
       // Скрыть индикатор загрузки в случае ошибки
@@ -96,4 +104,5 @@ function sendMail() {
 // Обработчик события "отправить"
 document.getElementById("popup__button").addEventListener("click", function() {
   sendMail();
+  
 });
