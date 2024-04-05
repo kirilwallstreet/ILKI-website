@@ -1473,14 +1473,23 @@ textarea.popup_input {
 .loading-spinner {
 	
 	display: none;
-	max-width: 60px;
-	margin: -15px;
+	max-width: 150px;
+	margin: -55px;
+	border: 0;
+	
   }
 
 .done-loading{
 	display: none;
-	max-width: 50px;
-	margin: -10px;
+	max-width: 60px;
+	margin: -8px;
+}
+
+.error-loafing{
+	display: none;
+	max-width:65px;
+	margin: -50px;
+	border: 0;
 }
 
   .popup__button span{

@@ -95,12 +95,18 @@ function sendMail() {
       
     })
     .catch(function(error) {
-      // Скрыть индикатор загрузки в случае ошибки
       document.getElementById("loading-spinner").style.display = "none";
-      alert("Error sending email: " + error);
-    });
-}
+      document.getElementById("error-loading").style.display = "block";
+      setTimeout(() => {
+        document.getElementById("error-loading").style.display = "none";
+      }, 2500);
 
+      setTimeout(() => {
+        document.getElementById("popup__button_span").style.display = "block";
+      }, 2600);
+
+})
+}
 // Обработчик события "отправить"
 document.getElementById("popup__button").addEventListener("click", function() {
   sendMail();
