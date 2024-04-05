@@ -676,7 +676,7 @@ body {
 	gap: 30px;
 	grid-auto-columns: 240px;
 	animation: scroll 14s linear infinite;
-	padding-bottom: 15px;
+	
 	margin-left: auto;
 	margin-right: auto;
   }
@@ -698,6 +698,7 @@ body {
   }
 /* Features */
 .features {
+	margin-bottom: 55px;
 }
 .features__container {
 }
@@ -1074,7 +1075,7 @@ body {
     width: 95%;
   position: relative;
     max-width: 800px;
-    margin: auto;
+    margin: 200px auto;
     background: #fff;
     box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
     padding: 25px;
