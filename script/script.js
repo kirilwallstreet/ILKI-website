@@ -33,18 +33,18 @@ function validateForm() {
   if (name === "") {
     nameError.style.color= "#ef233c";
     
-    nameError.textContent = "Введите имя";
+    nameError.textContent = "Введіть ім'я";
     return false;
   } 
 
   // Валидация email
   if (email === "") {
     emailError.style.color= "#ef233c";
-    emailError.textContent = "Введите email";
+    emailError.textContent = "Введіть email";
     return false;
   } else if (!/\S+@\S+\.\S+/.test(email)) {
     emailError.style.color= "#ef233c";
-    emailError.textContent = "Введите корректный email";
+    emailError.textContent = "Введіть коректний email";
     return false;
   }
 

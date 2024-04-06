@@ -676,7 +676,7 @@ body {
 	grid-auto-flow: column;
 	gap: 30px;
 	grid-auto-columns: 240px;
-	animation: scroll 14s linear infinite;
+	animation: scroll 20s linear infinite;
 	
 	margin-left: auto;
 	margin-right: auto;
@@ -684,7 +684,8 @@ body {
   
 
   .brand_wrapper img {
-	text-align: center;
+	
+	align-content: center;
 	margin: auto;
 	
   }
