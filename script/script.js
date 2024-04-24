@@ -17,6 +17,8 @@ document.querySelector('.more-button').addEventListener('click', function () {
 });
 
 
+
+
 // Add a click event listener to the submit button
 function validateForm() {
   // Получение значений из полей формы
@@ -112,3 +114,6 @@ document.getElementById("popup__button").addEventListener("click", function() {
   sendMail();
   
 });
+
+
+
