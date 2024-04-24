@@ -1004,7 +1004,6 @@ body {
 	margin-bottom: 15px;
 }
 .contact_us__button {
-	transition: all 0.4s ;
 	display: flex;
 	min-height: 60px;
 	background-color: #062744;
@@ -1026,6 +1025,7 @@ body {
 	top: 0;
 	position: relative;
 	margin: auto;
+	transition: all 0.3s ;
 }
 
 .contact_us__button a {
@@ -1036,6 +1036,7 @@ body {
 .contact_us__button:hover{
 	top: 5px;
 	box-shadow: 0 30px 60px 0 rgba(68, 117, 242, 0.5);
+	
 }
 
 
@@ -1338,6 +1339,7 @@ align-items: flex-start;
     color: #4e4a67;
     margin-bottom: 30px;
     line-height: 1.5em;
+	margin-right: 15px;
   }
   
   &__button {
@@ -1354,9 +1356,14 @@ align-items: flex-start;
     letter-spacing: 1px;
     @media screen and (max-width: 576px) {
       width: 100%;
+	  
     }
+
+	
     
   }
+
+  
   .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
     bottom: 10px;
     left: 0;
