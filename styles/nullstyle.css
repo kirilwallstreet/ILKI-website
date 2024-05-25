@@ -75,3 +75,12 @@ select {
   }
 
 }
+
+input {
+  outline: none;
+  border: 1px solid black;
+}
+input:focus {
+  outline: none;
+  border-color:none;
+}
