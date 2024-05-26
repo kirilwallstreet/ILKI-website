@@ -69,6 +69,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/j
                         <a href="#reviews" class="menu__link">Відгуки</a>
                     </li>
                     <li class="more-button-list-item">
+                        <a href="#faqs" class="menu__link">FAQ</a>
+                    </li>
+                    <li class="more-button-list-item">
                         <a href="#popup" class="menu__link">Залишити заявку</a>
                     </li>
 
@@ -90,6 +93,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/j
                         </li>
                         <li class="menu__item">
                             <a href="#reviews" class="menu__link">Відгуки</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#faqs" class="menu__link">FAQ</a>
                         </li>
                         <li class="menu__item">
                             <a href="#popup" class="menu__link">Залишити заявку</a>
@@ -322,7 +328,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/j
                                         <div class="review__text">Замовляв у хлопців розробку магазину і залишився дуже задоволений. Відчув справжній фідбек і бажання допомогти мені почати свій шлях. Швидкість та якість роботи приємно здивували, тим паче за такі кошти. Дякую вам, Ilki!</div>
                                         <div class="review__title">
                                             <div class="review__logo"><img src="source/reviews/Лев.png" alt=""></div>
-                                            <div class="review__name">Лев<br><a href="">Свій інтернет магазин</a></div>
+                                            <div class="review__name">Лев<br><a href="#popup">Свій інтернет магазин</a></div>
                                         </div>
                                     </div>
                                   </li>
@@ -330,13 +336,13 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/j
                                     <div class="review__text">Підключили мені Shopify Payments. Спочатку було трохи страшно, але все пройшло на вищому рівні. Процес зайняв буквально два дні. Сподобалось, що зі мною завжди були на зв'язку і не залишили одного! Дякую, Ilki!</div>
                                     <div class="review__title">
                                         <div class="review__logo"><img src="source/reviews/БОрис.png" alt=""></div>
-                                        <div class="review__name">Борис<br><a href="">Підключення платіжної системи</a></div>
+                                        <div class="review__name">Борис<br><a href="#popup">Підключення платіжної системи</a></div>
                                     </div></li>
                                     <li class="splide__slide">  <div class="review__box">
                                         <div class="review__text">Звернулася до Ilki повним новачком, але рішуча розпочати свій бізнес. Хлопці не лише створили мені магазин, але й навчили ним користуватись. Пояснили все зрозуміло, показали корисні відео. Все сподобалось, вже порекомендувала їх своїм подругам.</div>
                                         <div class="review__title">
                                             <div class="review__logo"><img src="source/reviews/Олександа.png" alt=""></div>
-                                            <div class="review__name">Олександра<br><a href="">Свій інтернет магазин</a></div>
+                                            <div class="review__name">Олександра<br><a href="#popup">Свій інтернет магазин</a></div>
                                         </div>
                                     </li>
                                     <li class="splide__slide" >
@@ -344,7 +350,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/j
                                             <div class="review__text">Ilki допомогли створити інтернет-магазин моєї мрії . Увесь процес був швидким та безпроблемним. Хлопці завжди були на зв'язку і допомагали з будь-якими питаннями. Рекомендую!</div>
                                             <div class="review__title">
                                                 <div class="review__logo"><img src="source/reviews/Наталыя.jpg" alt=""></div>
-                                                <div class="review__name">Наталія<br><a href="">Свій інтернет магазин</a></div>
+                                                <div class="review__name">Наталія<br><a href="#popup">Свій інтернет магазин</a></div>
                                             </div>
                                         </div>
                                       </li>
@@ -353,7 +359,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/j
                                             <div class="review__text">Замовив пошук товарів для своєї ніші. Ціна трохи здивувала, але вирішив спробувати. І вже через пів місяця 6 із 10 товарів почали дуже добре продаватись. Зараз працюємо разом над удосконаленням мого магазину, щоб збільшити продажі. Ilki — ви супер!</div>
                                             <div class="review__title">
                                                 <div class="review__logo"><img src="source/reviews/Максим.png" alt=""></div>
-                                                <div class="review__name">Максим<br><a href="">Пошук High-profit товарів під мою нішу</a></div>
+                                                <div class="review__name">Максим<br><a href="#popup">Пошук High-profit товарів під мою нішу</a></div>
                                             </div>
                                         </div>
                                       </li>
@@ -397,71 +403,77 @@ splide.mount(window.splide.Extensions)
 </script>
             </section> 
             
-            <section id="faq" class="page__faq faq"  data-aos="fade-up" >
+            <section id="faqs" class="page__faq faqs" data-aos="fade-up">
                 <div class="faq__container">
                     <div class="faq__header-block header-block header-block--margin">
                         <div class="header-block__label">FAQ</div>
                         <h2 class="header-block__title">Часті запитання</h2>
                     </div>
-                    <div class="faq__content">
-
+                    <div class="faq" data-aos="fade-up">
+                        <div class="faq__question">
+                            <h3>Чому Shopify ?</h3>
+                            <img src="source/faq/icons8-back-100.png" alt="">
+                        </div>
+                        <div class="faq__answer">
+                            <p>Shopify – це одна з найпопулярніших платформ для електронної комерції, яка пропонує широкий спектр інструментів для управління магазином, зручний інтерфейс, безпечні платіжні системи та безліч можливостей для кастомізації. Це ідеальний вибір для швидкого старту та масштабування вашого бізнесу.</p>
+                        </div>
                     </div>
-                </div>
-            </section>
-
-
-            <span class="none">
-            <section id="steps__work" class="page__steps__work steps__work" data-aos="fade-up">
-                <div class="steps__work__container">
-                    <div class="stages__work__header-block header-block header-block--margin">
-                        <div class="header-block__label">Етапи</div>
-                        <h2 class="header-block__title">Кроки роботи</h2>
-                        </div>          
-                          <div class="steps">
-                            <div id="step1" class="step">
-                                <h1>1</h1>
-                              <h2>Ви залишаєте заявку</h2>
-                              <p>Заповніть форму на нашому сайті або зателефонуйте нам.</p>
-                            </div>
-                            <div id="step2" class="step">
-                                <h1>2</h1>
-                              <h2>Ми з вами зв'язуємось</h2>
-                              <p>Наш менеджер зв'яжеться з вами для уточнення деталей.</p>
-                            </div>
-
-                            <div id="step3" class="step">
-                                <h1>3</h1>
-                              <h2>Ви оплачуєте розробку</h2>
-                              <p>Після узгодження деталей ви можете оплатити розробку.</p>
-                            </div>
-
-                            <div id="step4" class="step">
-                                <h1>4</h1>
-                              <h2>Ми створюємо магазин</h2>
-                              <p>Наша команда розробить для вас інтернет-магазин.</p>
-                            </div>
-
-                            <div id="step5" class="step">
-                                <h1>5</h1>
-                              <h2>Ви тестуєте магазин</h2>
-                              <p>Ви можете протестувати магазин перед його запуском.</p>
-                            </div>
-
-                            <div id="step6" class="step">
-                                <h1>6</h1>
-                              <h2>Ми запускаємо магазин</h2>
-                              <p>Ваш інтернет-магазин буде доступний для покупців.</p>
-                            </div>
-
-                            <div id="step7" class="step">
-                                <h1>7</h1>
-                              <h2>Ви отримуєте підтримку</h2>
-                              <p>Ми надаємо гарантійне та післягарантійне обслуговування.</p>
-                            </div>
+                    <div class="faq" data-aos="fade-up">
+                        <div class="faq__question">
+                            <h3> Як довго триває створення інтернет-магазину ?</h3>
+                            <img src="source/faq/icons8-back-100.png" alt="">
+                        </div>
+                        <div class="faq__answer">
+                            <p>Тривалість створення інтернет-магазину залежить від складності проекту та ваших вимог. Зазвичай, базовий магазин можна запустити протягом 2-4 днів, тоді як більш складні проекти можуть зайняти до 5-10 днів.</p>
+                        </div>
                     </div>
-                </div>
+                    <div class="faq" data-aos="fade-up">
+                        <div class="faq__question">
+                            <h3>Чи надаєте ви підтримку після запуску магазину?</h3>
+                            <img src="source/faq/icons8-back-100.png" alt="">
+                        </div>
+                        <div class="faq__answer">
+                            <p>Так, ми пропонуємо послуги з технічної підтримки та обслуговування після запуску магазину. Ми допоможемо вам з вирішенням будь-яких технічних питань, оновленнями та удосконаленнями вашого магазину.</p>
+                        </div>
+                    </div>
+                    <div class="faq" data-aos="fade-up"> 
+                        <div class="faq__question">
+                            <h3>Чи можу я самостійно управляти своїм інтернет-магазином після його запуску?</h3>
+                            <img src="source/faq/icons8-back-100.png" alt="">
+                        </div>
+                        <div class="faq__answer">
+                            <p>Так, платформа Shopify має інтуїтивно зрозумілий інтерфейс, який дозволяє вам самостійно управляти магазином, додавати нові продукти, обробляти замовлення та проводити маркетингові кампанії. Ми також надаємо навчання та підтримку для того, щоб ви могли ефективно управляти своїм бізнесом.</p>
+                        </div>
+                    </div>
+                    <div class="faq" data-aos="fade-up">
+                        <div class="faq__question">
+                            <h3>Чи надаєте ви послуги з редизайну та удосконалення існуючих магазинів на Shopify?</h3>
+                            <img src="source/faq/icons8-back-100.png" alt="">
+                        </div>
+                        <div class="faq__answer">
+                            <p>Так, ми пропонуємо послуги з редизайну та удосконалення вже існуючих магазинів на Shopify. Ми можемо оновити дизайн, додати нові функції та оптимізувати ваш магазин для підвищення конверсій та покращення користувацького досвіду.</p>
+                        </div>
+                    </div>
+                    <div class="faq" data-aos="fade-up">
+                        <div class="faq__question">
+                            <h3> Як розпочати співпрацю з командою?</h3>
+                            <img src="source/faq/icons8-back-100.png" alt="">
+                        </div>
+                        <div class="faq__answer">
+                            <p>Для початку співпраці зв'яжіться з нами через наш вебсайт або надішліть запит на електронну пошту. Ми домовимось про зручний час для обговорення вашого проекту та надамо всі необхідні консультації для успішного старту.</p>
+                        </div>
+                    </div>
+                </div>    <script>
+                const faqs = document.querySelectorAll(".faq");
+        
+                faqs.forEach((faq) => {
+                    faq.addEventListener("click", () => {
+                        faq.classList.toggle("active");
+                    });
+                });
+            </script>
             </section>
-            </span>    
+        
             <section class="page__contact_us  contact_us" data-aos="fade-up">
 
               <div class="contact_us__container"data-aos="fade-up">
@@ -514,7 +526,7 @@ splide.mount(window.splide.Extensions)
                     </div>
                   
             </div>
-            <div class="footer__copy">© 2024 ILKI. All rights reserved.</div>
+            <div class="footer__copy">© 2024 ILKI. Усі права захищені.</div>
         </footer>
     </div>
     <div id="popup" class="popup">
