@@ -573,7 +573,7 @@ body {
 	font-size: 76px;
 	font-weight: 800;
 	color: #181e4b;
-	letter-spacing: -4px;
+	letter-spacing: -1px;
 	line-height: 90.105263%; /* 89/76 */
 	margin-bottom: 0;
 	
@@ -762,6 +762,8 @@ body {
 	width: 100px;
 	padding: 20px;
 	box-shadow: 0 30px 60px 0 rgba(71, 74, 87, 0.25);
+
+	background-image: linear-gradient(147deg, rgb(140, 113, 236), var(--primary-color) 74%);
 }
 
 .features__title {
@@ -817,6 +819,8 @@ body {
 	width: 100px;
 	padding: 20px;
 	box-shadow: 0 30px 60px 0 rgba(71, 74, 87, 0.25);
+
+	background-image: linear-gradient(147deg, rgb(140, 113, 236), var(--primary-color) 74%);
 }
 .auditorium__titel {
 	color: #000;
@@ -1014,6 +1018,8 @@ body {
 	padding: 0.8em;
 	cursor: pointer;
 	color: rgb(245, 245, 245);
+
+	background-image: linear-gradient(147deg, rgb(116, 82, 240), var(--primary-color) 74%);
 }
 .faq__question {
 	display: flex;
@@ -1074,6 +1080,7 @@ body {
 .contact_us a {
 	color: var(--primary-color);
 	text-decoration: underline;
+	
 	
 }
 .contact_us a:hover {
@@ -1460,6 +1467,7 @@ align-items: flex-start;
       width: 100%;
 	  
     }
+	
 
 	
     
