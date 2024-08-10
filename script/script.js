@@ -116,3 +116,100 @@ document.getElementById("popup__button").addEventListener("click", function() {
 });
 
 
+
+var langArr = {
+  "header": {
+      "ua": {
+          "features": "Особливості",
+          "audience": "Аудиторія",
+          "services": "Послуги",
+          "reviews": "Відгуки",
+          "faq": "FAQ",
+          "leave-request": "Залишити заявку"
+      },
+      "de": {
+          "features": "Funktionen",
+          "audience": "Zielgruppe",
+          "services": "Dienstleistungen",
+          "reviews": "Bewertungen",
+          "faq": "FAQ",
+          "leave-request": "Anfrage stellen"
+      },
+      "en": {
+          "features": "Features",
+          "audience": "Audience",
+          "services": "Services",
+          "reviews": "Reviews",
+          "faq": "FAQ",
+          "leave-request": "Leave a Request"
+      }
+  },
+  "hero": {
+      "ua": {
+          "title": "ILKI - ваш провідник в всесвіт електронної комерції",
+          "text": "Допоможемо вам відкрити власний інтернет-бізнес на платформі Shopfiy всьго за 3 дні! <br> Або покращемо ваш вже існуючий магазин!✨",
+          "button": "Почати →"
+      },
+      "de": {
+          "title": "ILKI - Ihr Führer in die Welt des E-Commerce",
+          "text": "Wir helfen Ihnen, Ihr eigenes Online-Geschäft auf der Shopify-Plattform in nur 3 Tagen zu eröffnen! <br> Oder wir verbessern Ihren bestehenden Shop!✨",
+          "button": "Starten →"
+      },
+      "en": {
+          "title": "ILKI - your guide to the world of e-commerce",
+          "text": "We will help you open your own online business on the Shopify platform in just 3 days! <br> Or we will improve your existing store!✨",
+          "button": "Get Started →"
+      }
+  },
+  "features": {
+      "ua": {
+          "label": "Особливості",
+          "title": "Чому саме ми?",
+          "speed": {
+              "title": "Швидкість",
+              "text": "Виконаємо завдання будь-якої складності в найбільш короткі терміни!"
+          },
+          "solutions": {
+              "title": "Рішення",
+              "text": "Вашу найкреативнішу задумку ніхто не може реалізувати? ILKI на допомогу! Ми знайдемо не менш креативне рішення для ваших ідей."
+          },
+          "price": {
+              "title": "Ціник",
+              "text": "Якщо ви знайдете компанію, яка запропонує вам розробити якісний та швидкий інтернет-магазин за кращою ціною, ми зробимо ваш магазин абсолютно безкоштовно!"
+          }
+      },
+      "de": {
+          "label": "Funktionen",
+          "title": "Warum wir?",
+          "speed": {
+              "title": "Geschwindigkeit",
+              "text": "Wir erledigen Aufgaben jeder Komplexität in kürzester Zeit!"
+          },
+          "solutions": {
+              "title": "Lösungen",
+              "text": "Kann niemand Ihre kreativste Idee umsetzen? ILKI hilft! Wir finden eine ebenso kreative Lösung für Ihre Ideen."
+          },
+          "price": {
+              "title": "Preis",
+              "text": "Wenn Sie ein Unternehmen finden, das Ihnen anbietet, einen hochwertigen und schnellen Online-Shop zu einem besseren Preis zu entwickeln, machen wir Ihren Shop absolut kostenlos!"
+          }
+      },
+      "en": {
+          "label": "Features",
+          "title": "Why choose us?",
+          "speed": {
+              "title": "Speed",
+              "text": "We will complete tasks of any complexity in the shortest possible time!"
+          },
+          "solutions": {
+              "title": "Solutions",
+              "text": "Can't anyone implement your most creative idea? ILKI to the rescue! We will find an equally creative solution for your ideas."
+          },
+          "price": {
+              "title": "Price",
+              "text": "If you find a company that offers you to develop a high-quality and fast online store at a better price, we will make your store absolutely free!"
+          }
+      }
+  }
+}
+

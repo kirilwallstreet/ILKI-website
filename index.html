@@ -38,68 +38,74 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/j
 </script>
 <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+<!-- ConveyThis: https://www.conveythis.com/   -->
+<script src="//cdn.conveythis.com/javascript/conveythis-initializer.js"></script>
+<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function(e) {
+		ConveyThis_Initializer.init({
+			api_key: "pub_18fa7cc8825a1595ed4e19fe1092a1ba"
+		});
+	});
+</script>
 </head>
 <body>
     <div class="wrapper">
         
-           <header id="header" class="header"> 
+        <header id="header" class="header"> 
             <div class="header__container">
-                
                 <div class="list-container">
                     <button class="more-button" aria-label="Menu Button">
-                      <div class="menu-icon-wrapper">
-                        <div class="menu-icon-line half first"></div>
-                        <div class="menu-icon-line"></div>
-                        <div class="menu-icon-line half last"></div>
-                      </div>
+                        <div class="menu-icon-wrapper">
+                            </div>
                     </button>
-                    
-                    <ul class="more-button-list">
-                      <li class="more-button-list-item">
-                        <a href="#features" class="menu__link">Особливості</a>
-                    </li>
-                    <li class="more-button-list-item">
-                      <a href="#auditorium" class="menu__link">Аудитория</a>
-                  </li>
-                    <li class="more-button-list-item">
-                        <a href="#services" class="menu__link">Послуги</a>
-                    </li>
-                    <li class="more-button-list-item">
-                        <a href="#reviews" class="menu__link">Відгуки</a>
-                    </li>
-                    <li class="more-button-list-item">
-                        <a href="#faqs" class="menu__link">FAQ</a>
-                    </li>
-                    <li class="more-button-list-item">
-                        <a href="#popup" class="menu__link">Залишити заявку</a>
-                    </li>
 
+                    <ul class="more-button-list">
+                        <li class="more-button-list-item">
+                            <a href="#features" class="menu__link lang" key="header.features">Особливості</a>
+                        </li>
+                        <li class="more-button-list-item">
+                            <a href="#auditorium" class="menu__link lang" key="header.audience">Аудитория</a>
+                        </li>
+                        <li class="more-button-list-item">
+                            <a href="#services" class="menu__link lang" key="header.services">Послуги</a>
+                        </li>
+                        <li class="more-button-list-item">
+                            <a href="#reviews" class="menu__link lang" key="header.reviews">Відгуки</a>
+                        </li>
+                        <li class="more-button-list-item">
+                            <a href="#faqs" class="menu__link lang" key="header.faq">FAQ</a>
+                        </li>
+                        <li class="more-button-list-item">
+                            <a href="#popup" class="menu__link lang" key="header.leave-request">Залишити заявку</a>
+                        </li>
                     </ul>
-                  </div>
-                  <a href="#hero" class="header__logo">
+                </div>
+                <a href="#hero" class="header__logo">
                     <img src="source/header/logo.png" alt="Logo">
                 </a>
                 <nav class="header__menu menu">
                     <ul class="menu__list">
                         <li class="menu__item">
-                            <a href="#features" class="menu__link">Особливості</a>
+                            <a href="#features" class="menu__link lang" key="header.features">Особливості</a>
                         </li>
                         <li class="menu__item">
-                          <a href="#auditorium" class="menu__link">Аудитория</a>
-                      </li>
-                        <li class="menu__item">
-                            <a href="#services" class="menu__link">Послуги</a>
+                            <a href="#auditorium" class="menu__link lang" key="header.audience">Аудитория</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#reviews" class="menu__link">Відгуки</a>
+                            <a href="#services" class="menu__link lang" key="header.services">Послуги</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#faqs" class="menu__link">FAQ</a>
+                            <a href="#reviews" class="menu__link lang" key="header.reviews">Відгуки</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#popup" class="menu__link">Залишити заявку</a>
+                            <a href="#faqs" class="menu__link lang" key="header.faq">FAQ</a>
                         </li>
+                        <li class="menu__item">
+                            <a href="#popup" class="menu__link lang" key="header.leave-request">Залишити заявку</a>
+                        </li>
+                        <li class="menu__item lang-en"><button id="en" class="translate"><img src="source/header/flag-for-flag-united-kingdom-svgrepo-com.svg" alt="" width="30px"></button></li>
+                        <li class="menu__item lang-de"><button id="de" class="translate"><img src="source/header/flag-for-flag-germany.svg" alt=""  width="30px"></button></li>
+                        <li class="menu__item lang-ua"><button id="ua" class="translate"><img src="source/header/flag-ua.svg" alt=""  width="30px"></button></li>
                     </ul>
                 </nav>
             </div>
@@ -473,7 +479,107 @@ splide.mount(window.splide.Extensions)
                 });
             </script>
             </section>
+
         
+            <section style="display: none;" id="portfolio" class="page__portfolio portfolio" data-aos="fade-up">
+                    <div class="portfolio__container">
+                        <div class="faq__header-block header-block header-block--margin">
+                            <div class="header-block__label">Portfolio</div>
+                            <h2 class="header-block__title">Поsdfdf</h2>
+                        </div>
+                        <div class="portfolio__cards">
+                            <div class="portfolio__card">
+                                <div class="card__img"><img src="source/portfolio/photo_2024-06-06_18-31-15.jpg" alt=""></div>
+                                <div class="card__content">
+                                    <div class="card__logo">
+                                        <img src="source/portfolio/OVUL_App.png" alt=""> 
+                                        <div class="card__title"><p>Ovul Ai</p>
+                                            <div class="card__details">
+                                                <div class="card__price">150$</div>
+                                                <div class="card__deadline">12 days</div>
+                                            </div>
+                                            <div class="card__link"><a href=""><img src="source/portfolio/external-link.png" alt=""></a></div>
+                                        </div>
+                                        
+                                </div>
+                                
+                                    <div class="card__description">
+                                        <p>сайт для американського стартапу</p>
+                                        <br>
+                                        <strong>Проект</strong>: Розробка сайту для стартапу Ovul, який створює пристрої для відстежування циклу овуляцій у жінок.
+                                        <br><br>
+    <strong>Завдання</strong>: Створити інтуїтивно зрозумілий сайт, що відображає фірмовий стиль компанії та забезпечує позитивний користувацький досвід.
+    <br><br>
+    <strong>Процес</strong>: Розробка тривала близько тижня. Багато елементів сайту були створені вручну, що дозволило досягти унікального дизайну та високої функціональності.
+    <br><br>
+    <strong>Результат</strong>: Завдяки ретельній роботі, сайт був завершений вчасно і повністю відповідав вимогам клієнта. Клієнт залишився задоволений на 100%.
+                                    </div>
+                                   
+                                    
+                                </div>
+                            </div>
+                            <div class="portfolio__card">
+                                <div class="card__img"><img src="source/portfolio/1920х1080.png" alt=""></div>
+                                <div class="card__content">
+                                    <div class="card__logo">
+                                        <img src="source/portfolio/photo_2024-06-11_20-29-38.jpg" alt=""> 
+                                        <div class="card__title"><p>Art Broken Bottle</p>
+                                            <div class="card__details">
+                                                <div class="card__price">125$</div>
+                                                <div class="card__deadline">5 days</div>
+                                            </div>
+                                            <div class="card__link"><a href=""><img src="source/portfolio/external-link.png" alt=""></a></div>
+                                        </div>
+                                </div>
+                                    <div class="card__description">
+                                        <p>Магазин для Митця з Польщі</p>
+                                        <br>
+                                       <strong> Проект:</strong> Розробка сайту для митця з Польщі, який створює чудові картини з розбитих пляшок.
+                                        <br><br>
+                                        <strong>Завдання:</strong> Створити легкий та зручний сайт, що забезпечує швидку та просту покупку картин. Важливо було налаштувати можливість доставки по всьому світу.
+                                        <br><br>
+                                       <strong> Процес:</strong> Весь процес розробки зайняв близько 3 днів. Основна увага приділялася простоті використання та функціональності сайту.
+                                        <br><br>
+                                        <strong>Результат:</strong> Клієнт залишився дуже задоволеним результатом і вже успішно продає свої картини через новий сайт.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio__card">
+                                <div class="card__img"><img src="source/portfolio/1920х1080.png" alt=""></div>
+                                <div class="card__content">
+                                    <div class="card__logo">
+                                        <img src="source/portfolio/photo_2024-06-11_20-29-38.jpg" alt=""> 
+                                        <div class="card__title"><p>Fish-bro</p>
+                                            <div class="card__details">
+                                                <div class="card__price">250$</div>
+                                                <div class="card__deadline">4 days</div>
+                                            </div>
+                                            <div class="card__link"><a href=""><img src="source/portfolio/external-link.png" alt=""></a></div>
+                                        </div>
+                                </div>
+                                    <div class="card__description">
+                                        <p>Магазин Рибальських Товарів для Українського Підприємця з Орієнтацією на Американський Ринок</p>
+                                        <br>
+                                        <strong>Проект:</strong> Розробка інтернет-магазину для підприємця з України, який бажає продавати свої товари в США.
+                                        <br><br>
+                                        <strong>Завдання:</strong> Допомогти клієнту, новачку в бізнесі, вибрати нішу магазину. Разом ми зупинилися на риболовлі. Створити привабливий магазин, орієнтований на американську аудиторію, та підключити платіжну систему для міжнародних продажів.
+                                        <br><br>
+                                        <strong>Процес:</strong> Процес розробки зайняв близько 5 днів. Ми разом з клієнтом обирали нішу, створювали дизайн та налаштовували всі необхідні функції для зручного використання.
+                                        <br><br>
+                                        <strong>Результат:</strong> Клієнт отримав бажаний результат і зараз успішно продає рибальські снасті американським клієнтам.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio__contact">
+                                <div class="contact__title">
+                                    Хочешь увидеть свой сайт здесь???
+                                </div>
+                                <div class="contact__button"><a href="#popup">Пиши анм сучка</a></div>
+                            </div></div>
+                    </div>
+             </section>
+       
+
             <section class="page__contact_us  contact_us" data-aos="fade-up">
 
               <div class="contact_us__container"data-aos="fade-up">
